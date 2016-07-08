@@ -12,11 +12,12 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         
         //添加字控制器
-        addViewController(HomeViewController(),title: "首页",image: "tabbar_home",selectImage: "tabbar_home_highlighted")
-        addViewController(MessageController(),title: "消息",image: "tabbar_message_center",selectImage: "tabbar_message_center_highlighted")
-        addViewController(UIViewController(),title: "",image: "",selectImage: "")
-        addViewController(DiscoveryController(),title: "发现",image: "tabbar_discover",selectImage: "tabbar_discover_highlighted")
-        addViewController(MeViewController(),title: "我",image: "tabbar_profile",selectImage: "tabbar_profile_highlighted")
+        addViewController("HomeViewController",title: "首页",image: "tabbar_home",selectImage: "tabbar_home_highlighted")
+        
+        addViewController("MessageController",title: "消息",image: "tabbar_message_center",selectImage: "tabbar_message_center_highlighted")
+        addViewController("NullController",title: "",image: "",selectImage: "")
+        addViewController("DiscoveryController",title: "发现",image: "tabbar_discover",selectImage: "tabbar_discover_highlighted")
+        addViewController("MeViewController",title: "我",image: "tabbar_profile",selectImage: "tabbar_profile_highlighted")
         
         //添加＋号按钮:不在viewDidLoad执行，原因是 在这里其它item没有被创建，“加号按钮”会在最底部，在其顶部会覆盖一个Item，导致无法获取 “加号按钮”的点击事件，因此需要在viewWillAppear方法内执行，保证能够“加号按钮”获取的点击事件
 //        addIcon()
@@ -60,22 +61,28 @@ class MainTabBarController: UITabBarController {
      - parameter image:       图片
      - parameter selectImage: 点击后到图片
      */
-    private func addViewController(vc: UIViewController,title: String, image:String, selectImage: String) {
+    private func addViewController(controllerName: String,title: String, image:String, selectImage: String) {
         tabBar.tintColor = UIColor.orangeColor()
+        //根据class string 创建类
+        let productName = NSBundle.mainBundle().infoDictionary!["CFBundleName"] as!String
+        let name = controllerName
+        let className = productName + "." + name;
+        
+        print("-----")
+        
+        let classType = NSClassFromString(className)! as! UIViewController.Type
+        let vc = classType.init()
         //设置image、title
         vc.title = title
         vc.tabBarItem.image = UIImage(named: image)
         vc.tabBarItem.selectedImage = UIImage(named: selectImage)
         //创建导航控制器
         let nav =  MainNavController(rootViewController: vc)
+        print(vc)
         
         addChildViewController(nav)
 
     }
     
-//    override  func tabBar(tabBar: UITabBar, didSelectItem item: UITabBarItem) {
-//        
-//        print(item.title)
-//    }
     
 }

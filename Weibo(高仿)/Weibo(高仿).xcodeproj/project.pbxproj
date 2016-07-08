@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0D0ED0941D2F4209009135F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0ED0931D2F4209009135F0 /* Images.xcassets */; };
+		0D0ED0961D2FCF7D009135F0 /* NullController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0ED0951D2FCF7D009135F0 /* NullController.swift */; };
 		0D583D761D2DFE5F00EC2989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583D751D2DFE5F00EC2989 /* AppDelegate.swift */; };
 		0D583D8B1D2DFE5F00EC2989 /* Weibo____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583D8A1D2DFE5F00EC2989 /* Weibo____Tests.swift */; };
 		0D583D961D2DFE5F00EC2989 /* Weibo____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583D951D2DFE5F00EC2989 /* Weibo____UITests.swift */; };
@@ -38,7 +39,8 @@
 
 /* Begin PBXFileReference section */
 		0D0ED0931D2F4209009135F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		0D583D721D2DFE5F00EC2989 /* Weibo(高仿).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weibo(高仿).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0ED0951D2FCF7D009135F0 /* NullController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NullController.swift; sourceTree = "<group>"; };
+		0D583D721D2DFE5F00EC2989 /* Weibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Weibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D583D751D2DFE5F00EC2989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0D583D811D2DFE5F00EC2989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D583D861D2DFE5F00EC2989 /* Weibo(高仿)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weibo(高仿)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,7 +95,7 @@
 		0D583D731D2DFE5F00EC2989 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D583D721D2DFE5F00EC2989 /* Weibo(高仿).app */,
+				0D583D721D2DFE5F00EC2989 /* Weibo.app */,
 				0D583D861D2DFE5F00EC2989 /* Weibo(高仿)Tests.xctest */,
 				0D583D911D2DFE5F00EC2989 /* Weibo(高仿)UITests.xctest */,
 			);
@@ -163,6 +165,7 @@
 			children = (
 				0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */,
 				0D583DB61D2E099700EC2989 /* MainNavController.swift */,
+				0D0ED0951D2FCF7D009135F0 /* NullController.swift */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -215,7 +218,7 @@
 			);
 			name = "Weibo(高仿)";
 			productName = "Weibo(高仿)";
-			productReference = 0D583D721D2DFE5F00EC2989 /* Weibo(高仿).app */;
+			productReference = 0D583D721D2DFE5F00EC2989 /* Weibo.app */;
 			productType = "com.apple.product-type.application";
 		};
 		0D583D851D2DFE5F00EC2989 /* Weibo(高仿)Tests */ = {
@@ -333,6 +336,7 @@
 				0D583DB51D2E054D00EC2989 /* MainTabBarController.swift in Sources */,
 				0D583D761D2DFE5F00EC2989 /* AppDelegate.swift in Sources */,
 				0D583DAC1D2E03D800EC2989 /* HomeViewController.swift in Sources */,
+				0D0ED0961D2FCF7D009135F0 /* NullController.swift in Sources */,
 				0D583DAF1D2E04AA00EC2989 /* MessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -460,7 +464,7 @@
 				INFOPLIST_FILE = "Weibo(高仿)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hador.developer.Weibo----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weibo;
 			};
 			name = Debug;
 		};
@@ -472,7 +476,7 @@
 				INFOPLIST_FILE = "Weibo(高仿)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hador.developer.Weibo----";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Weibo;
 			};
 			name = Release;
 		};
