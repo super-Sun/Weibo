@@ -16,12 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         //
-        
+        print("555")
         window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        
+        print(UIScreen.mainScreen().bounds)
+        window?.backgroundColor = UIColor.whiteColor()
         window?.rootViewController = MainTabBarController()
         
-        window?.makeKeyWindow()
+        window?.makeKeyAndVisible()
         
         
         return true

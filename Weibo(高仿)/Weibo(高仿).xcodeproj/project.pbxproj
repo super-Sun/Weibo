@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D0ED0941D2F4209009135F0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D0ED0931D2F4209009135F0 /* Images.xcassets */; };
 		0D583D761D2DFE5F00EC2989 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583D751D2DFE5F00EC2989 /* AppDelegate.swift */; };
-		0D583D7B1D2DFE5F00EC2989 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D583D791D2DFE5F00EC2989 /* Main.storyboard */; };
-		0D583D7D1D2DFE5F00EC2989 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D583D7C1D2DFE5F00EC2989 /* Assets.xcassets */; };
-		0D583D801D2DFE5F00EC2989 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D583D7E1D2DFE5F00EC2989 /* LaunchScreen.storyboard */; };
 		0D583D8B1D2DFE5F00EC2989 /* Weibo____Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583D8A1D2DFE5F00EC2989 /* Weibo____Tests.swift */; };
 		0D583D961D2DFE5F00EC2989 /* Weibo____UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583D951D2DFE5F00EC2989 /* Weibo____UITests.swift */; };
 		0D583DAC1D2E03D800EC2989 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583DAB1D2E03D800EC2989 /* HomeViewController.swift */; };
@@ -39,11 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D0ED0931D2F4209009135F0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		0D583D721D2DFE5F00EC2989 /* Weibo(高仿).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Weibo(高仿).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D583D751D2DFE5F00EC2989 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D583D7A1D2DFE5F00EC2989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D583D7C1D2DFE5F00EC2989 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D583D7F1D2DFE5F00EC2989 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D583D811D2DFE5F00EC2989 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0D583D861D2DFE5F00EC2989 /* Weibo(高仿)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Weibo(高仿)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D583D8A1D2DFE5F00EC2989 /* Weibo____Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Weibo____Tests.swift"; sourceTree = "<group>"; };
@@ -55,7 +51,7 @@
 		0D583DAE1D2E04AA00EC2989 /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
 		0D583DB01D2E04BD00EC2989 /* DiscoveryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoveryController.swift; sourceTree = "<group>"; };
 		0D583DB21D2E04D800EC2989 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
-		0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
 		0D583DB61D2E099700EC2989 /* MainNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,10 +105,8 @@
 			children = (
 				0D583DA31D2E031700EC2989 /* Classes */,
 				0D583D751D2DFE5F00EC2989 /* AppDelegate.swift */,
-				0D583D791D2DFE5F00EC2989 /* Main.storyboard */,
-				0D583D7C1D2DFE5F00EC2989 /* Assets.xcassets */,
-				0D583D7E1D2DFE5F00EC2989 /* LaunchScreen.storyboard */,
 				0D583D811D2DFE5F00EC2989 /* Info.plist */,
+				0D0ED0931D2F4209009135F0 /* Images.xcassets */,
 			);
 			path = "Weibo(高仿)";
 			sourceTree = "<group>";
@@ -308,9 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D583D801D2DFE5F00EC2989 /* LaunchScreen.storyboard in Resources */,
-				0D583D7D1D2DFE5F00EC2989 /* Assets.xcassets in Resources */,
-				0D583D7B1D2DFE5F00EC2989 /* Main.storyboard in Resources */,
+				0D0ED0941D2F4209009135F0 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,25 +367,6 @@
 			targetProxy = 0D583D921D2DFE5F00EC2989 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		0D583D791D2DFE5F00EC2989 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D583D7A1D2DFE5F00EC2989 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0D583D7E1D2DFE5F00EC2989 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0D583D7F1D2DFE5F00EC2989 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		0D583D981D2DFE5F00EC2989 /* Debug */ = {
@@ -483,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Weibo(高仿)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hador.developer.Weibo----";
@@ -494,6 +468,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Weibo(高仿)/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hador.developer.Weibo----";
