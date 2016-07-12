@@ -49,7 +49,22 @@ class MainTabBarController: UITabBarController {
      */
     func addClike() {
         print("00000")
-        presentViewController(UIViewController(), animated: true) { () -> Void in
+        let vc = UIViewController.init()
+        
+        vc.view.frame = view.bounds
+        let bt = UIButton(frame: CGRectMake(0, 20, 100, 20))
+        bt.setTitle("关闭", forState: UIControlState.Normal)
+        bt.backgroundColor = UIColor.redColor()
+        bt.addTarget(self, action: Selector("backClike"), forControlEvents: UIControlEvents.TouchUpInside)
+        
+        vc.view.addSubview(bt)
+        presentViewController(vc, animated: true) { () -> Void in
+        }
+        
+    }
+    func backClike() {
+        dismissViewControllerAnimated(true) { () -> Void in
+            //
         }
     }
     
@@ -81,7 +96,6 @@ class MainTabBarController: UITabBarController {
         print(vc)
         
         addChildViewController(nav)
-
     }
     
     

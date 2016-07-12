@@ -18,6 +18,9 @@
 		0D583DB31D2E04D800EC2989 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583DB21D2E04D800EC2989 /* MeViewController.swift */; };
 		0D583DB51D2E054D00EC2989 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */; };
 		0D583DB71D2E099700EC2989 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583DB61D2E099700EC2989 /* MainNavController.swift */; };
+		0DE926761D348202001B135B /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE926751D348202001B135B /* main.storyboard */; };
+		0DE926781D3483D7001B135B /* NavTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE926771D3483D7001B135B /* NavTitleButton.swift */; };
+		0DFAB27B1D333300000BB0B5 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAB27A1D333300000BB0B5 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,9 @@
 		0D583DB21D2E04D800EC2989 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
 		0D583DB61D2E099700EC2989 /* MainNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
+		0DE926751D348202001B135B /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		0DE926771D3483D7001B135B /* NavTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTitleButton.swift; sourceTree = "<group>"; };
+		0DFAB27A1D333300000BB0B5 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +154,8 @@
 		0D583DA41D2E031700EC2989 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				0DFAB27A1D333300000BB0B5 /* UIBarButtonItem+Extension.swift */,
+				0DE926771D3483D7001B135B /* NavTitleButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -166,6 +174,7 @@
 				0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */,
 				0D583DB61D2E099700EC2989 /* MainNavController.swift */,
 				0D0ED0951D2FCF7D009135F0 /* NullController.swift */,
+				0DE926751D348202001B135B /* main.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -306,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D0ED0941D2F4209009135F0 /* Images.xcassets in Resources */,
+				0DE926761D348202001B135B /* main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +347,8 @@
 				0D583D761D2DFE5F00EC2989 /* AppDelegate.swift in Sources */,
 				0D583DAC1D2E03D800EC2989 /* HomeViewController.swift in Sources */,
 				0D0ED0961D2FCF7D009135F0 /* NullController.swift in Sources */,
+				0DFAB27B1D333300000BB0B5 /* UIBarButtonItem+Extension.swift in Sources */,
+				0DE926781D3483D7001B135B /* NavTitleButton.swift in Sources */,
 				0D583DAF1D2E04AA00EC2989 /* MessageController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
