@@ -18,7 +18,12 @@
 		0D583DB31D2E04D800EC2989 /* MeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583DB21D2E04D800EC2989 /* MeViewController.swift */; };
 		0D583DB51D2E054D00EC2989 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */; };
 		0D583DB71D2E099700EC2989 /* MainNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D583DB61D2E099700EC2989 /* MainNavController.swift */; };
-		0DE926761D348202001B135B /* main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE926751D348202001B135B /* main.storyboard */; };
+		0DD89C8F11EC052B00E58B18 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD89C8E11EC052B00E58B18 /* Home.storyboard */; };
+		0DD89C9111EC055200E58B18 /* Message.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD89C9011EC055200E58B18 /* Message.storyboard */; };
+		0DD89C9311EC071900E58B18 /* Discovery.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD89C9211EC071900E58B18 /* Discovery.storyboard */; };
+		0DD89C9511EC072800E58B18 /* Me.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DD89C9411EC072800E58B18 /* Me.storyboard */; };
+		0DDA2B511D35E55A00FAADF3 /* Null.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DDA2B501D35E55A00FAADF3 /* Null.storyboard */; };
+		0DE926761D348202001B135B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE926751D348202001B135B /* Main.storyboard */; };
 		0DE926781D3483D7001B135B /* NavTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE926771D3483D7001B135B /* NavTitleButton.swift */; };
 		0DFAB27B1D333300000BB0B5 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DFAB27A1D333300000BB0B5 /* UIBarButtonItem+Extension.swift */; };
 /* End PBXBuildFile section */
@@ -58,7 +63,12 @@
 		0D583DB21D2E04D800EC2989 /* MeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeViewController.swift; sourceTree = "<group>"; };
 		0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; usesTabs = 0; wrapsLines = 1; };
 		0D583DB61D2E099700EC2989 /* MainNavController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainNavController.swift; sourceTree = "<group>"; };
-		0DE926751D348202001B135B /* main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = main.storyboard; sourceTree = "<group>"; };
+		0DD89C8E11EC052B00E58B18 /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		0DD89C9011EC055200E58B18 /* Message.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Message.storyboard; sourceTree = "<group>"; };
+		0DD89C9211EC071900E58B18 /* Discovery.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discovery.storyboard; sourceTree = "<group>"; };
+		0DD89C9411EC072800E58B18 /* Me.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Me.storyboard; sourceTree = "<group>"; };
+		0DDA2B501D35E55A00FAADF3 /* Null.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Null.storyboard; sourceTree = "<group>"; };
+		0DE926751D348202001B135B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		0DE926771D3483D7001B135B /* NavTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavTitleButton.swift; sourceTree = "<group>"; };
 		0DFAB27A1D333300000BB0B5 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -174,7 +184,12 @@
 				0D583DB41D2E054D00EC2989 /* MainTabBarController.swift */,
 				0D583DB61D2E099700EC2989 /* MainNavController.swift */,
 				0D0ED0951D2FCF7D009135F0 /* NullController.swift */,
-				0DE926751D348202001B135B /* main.storyboard */,
+				0DE926751D348202001B135B /* Main.storyboard */,
+				0DDA2B501D35E55A00FAADF3 /* Null.storyboard */,
+				0DD89C9411EC072800E58B18 /* Me.storyboard */,
+				0DD89C9211EC071900E58B18 /* Discovery.storyboard */,
+				0DD89C9011EC055200E58B18 /* Message.storyboard */,
+				0DD89C8E11EC052B00E58B18 /* Home.storyboard */,
 			);
 			path = Main;
 			sourceTree = "<group>";
@@ -314,8 +329,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DD89C9311EC071900E58B18 /* Discovery.storyboard in Resources */,
+				0DDA2B511D35E55A00FAADF3 /* Null.storyboard in Resources */,
+				0DD89C8F11EC052B00E58B18 /* Home.storyboard in Resources */,
 				0D0ED0941D2F4209009135F0 /* Images.xcassets in Resources */,
-				0DE926761D348202001B135B /* main.storyboard in Resources */,
+				0DD89C9111EC055200E58B18 /* Message.storyboard in Resources */,
+				0DD89C9511EC072800E58B18 /* Me.storyboard in Resources */,
+				0DE926761D348202001B135B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,9 +494,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Weibo(高仿)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hador.developer.Weibo----";
 				PRODUCT_NAME = Weibo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -486,9 +508,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
 				INFOPLIST_FILE = "Weibo(高仿)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hador.developer.Weibo----";
 				PRODUCT_NAME = Weibo;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

@@ -9,6 +9,21 @@
 import UIKit
 
 class HomeViewController: UITableViewController {
+    
+    var islogin = true
+    //在控制器 加载view之前，判断是否已经登入
+    override func loadView() {
+        //
+        if !islogin {
+//             let frame = CGRectMake(0, 0, 320, 0)
+            let view1 = UIView.init()
+            view1.backgroundColor = UIColor.redColor()
+            view = view1
+        } else {
+            super.loadView()
+        }
+    }
+    
     override func viewDidLoad() {
         //设置导航栏样式
         //1.添加导航栏的左右按钮

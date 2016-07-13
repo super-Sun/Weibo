@@ -12,15 +12,35 @@ class MainTabBarController: UITabBarController {
     override func viewDidLoad() {
         
         //添加字控制器
+        
+        addViewControllers()
+        /*
         addViewController("HomeViewController",title: "首页",image: "tabbar_home",selectImage: "tabbar_home_highlighted")
         
         addViewController("MessageController",title: "消息",image: "tabbar_message_center",selectImage: "tabbar_message_center_highlighted")
         addViewController("NullController",title: "",image: "",selectImage: "")
         addViewController("DiscoveryController",title: "发现",image: "tabbar_discover",selectImage: "tabbar_discover_highlighted")
         addViewController("MeViewController",title: "我",image: "tabbar_profile",selectImage: "tabbar_profile_highlighted")
+        */
+        
         
         //添加＋号按钮:不在viewDidLoad执行，原因是 在这里其它item没有被创建，“加号按钮”会在最底部，在其顶部会覆盖一个Item，导致无法获取 “加号按钮”的点击事件，因此需要在viewWillAppear方法内执行，保证能够“加号按钮”获取的点击事件
 //        addIcon()
+        
+    }
+    private func addViewController(storyboardName: String) {
+        let sb = UIStoryboard(name: storyboardName, bundle: nil)
+        let vc = sb.instantiateInitialViewController()!
+        addChildViewController(vc)
+        
+    }
+    private func addViewControllers() {
+        
+        addViewController("Home")
+        addViewController("Message")
+        addViewController("Null")
+        addViewController("Discovery")
+        addViewController("Me")
         
     }
     private func addIcon() {
@@ -84,9 +104,11 @@ class MainTabBarController: UITabBarController {
         let className = productName + "." + name;
         
         print("-----")
-        
+        /// 通过类名创建控制器
         let classType = NSClassFromString(className)! as! UIViewController.Type
         let vc = classType.init()
+        // 通过storyboard创建
+//        let sv = UIStoryboard.init(name: <#T##String#>, bundle: <#T##NSBundle?#>)
         //设置image、title
         vc.title = title
         vc.tabBarItem.image = UIImage(named: image)

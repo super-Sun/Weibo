@@ -16,14 +16,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         //
-        print("555")
-        window = UIWindow(frame: UIScreen.mainScreen().bounds)
-        print(UIScreen.mainScreen().bounds)
-        window?.backgroundColor = UIColor.whiteColor()
-        window?.rootViewController = MainTabBarController()
-        
-        window?.makeKeyAndVisible()
-        
+        // 一般情况下设置全局性的属性
+        // 主图
+        UINavigationBar.appearance().tintColor = UIColor.orangeColor()
+        UITabBar.appearance().tintColor = UIColor.orangeColor()
         
         return true
     }
