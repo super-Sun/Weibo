@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="grb-3p-hm1">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="b0x-00-adN">
+            <objects>
+                <navigationController id="grb-3p-hm1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="EHZ-yO-LQK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="DTc-jE-eHr" kind="relationship" relationship="rootViewController" id="znt-c7-yG2"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HzZ-CA-Egj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="610" y="-96"/>
+        </scene>
+        <!--Author Controller-->
+        <scene sceneID="hvc-3V-uRX">
+            <objects>
+                <viewController id="DTc-jE-eHr" customClass="AuthorController" customModule="Weibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nuO-jr-p73"/>
+                        <viewControllerLayoutGuide type="bottom" id="yP7-2R-9M4"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jf2-3O-Rov">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VeY-2M-yfc">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="delegate" destination="DTc-jE-eHr" id="Zqb-S3-csJ"/>
+                                </connections>
+                            </webView>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="yP7-2R-9M4" firstAttribute="top" secondItem="VeY-2M-yfc" secondAttribute="bottom" id="MKj-bW-SIB"/>
+                            <constraint firstItem="VeY-2M-yfc" firstAttribute="leading" secondItem="jf2-3O-Rov" secondAttribute="leading" id="Ohj-0I-fpN"/>
+                            <constraint firstAttribute="trailing" secondItem="VeY-2M-yfc" secondAttribute="trailing" id="PgF-lo-wop"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="VeY-2M-yfc" secondAttribute="trailing" id="cTk-GE-shL"/>
+                            <constraint firstItem="yP7-2R-9M4" firstAttribute="top" secondItem="VeY-2M-yfc" secondAttribute="bottom" id="dym-ko-hsP"/>
+                            <constraint firstItem="VeY-2M-yfc" firstAttribute="top" secondItem="jf2-3O-Rov" secondAttribute="top" id="gNu-HC-vX4"/>
+                            <constraint firstItem="VeY-2M-yfc" firstAttribute="top" secondItem="jf2-3O-Rov" secondAttribute="topMargin" id="hHv-Ay-iXD"/>
+                            <constraint firstItem="VeY-2M-yfc" firstAttribute="leading" secondItem="jf2-3O-Rov" secondAttribute="leadingMargin" id="zwQ-Fg-a6R"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="cTk-GE-shL"/>
+                                <exclude reference="zwQ-Fg-a6R"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <navigationItem key="navigationItem" id="QZz-WM-Ztm">
+                        <barButtonItem key="rightBarButtonItem" title="填写" id="fkq-wJ-auR">
+                            <connections>
+                                <action selector="AutoWrite:" destination="DTc-jE-eHr" id="XGY-Yd-03z"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="webView" destination="VeY-2M-yfc" id="ZyA-Zp-tL6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DnE-H1-aNe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1345" y="-240"/>
+        </scene>
+    </scenes>
+</document>

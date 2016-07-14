@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9060" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="85s-yB-yiF">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Welcome Controller-->
+        <scene sceneID="QS3-eS-cPA">
+            <objects>
+                <viewController id="85s-yB-yiF" customClass="WelcomeController" customModule="Weibo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="cvw-4U-qVC"/>
+                        <viewControllerLayoutGuide type="bottom" id="Cmz-49-ChR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="twN-Jg-dw4">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ad_background" translatesAutoresizingMaskIntoConstraints="NO" id="Qil-Dr-VRJ">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <animations/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="avatar_default_big" translatesAutoresizingMaskIntoConstraints="NO" id="ysU-gp-LcS">
+                                <rect key="frame" x="266" y="364" width="68" height="68"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="r3n-Um-lYl"/>
+                                    <constraint firstAttribute="height" constant="68" id="zfU-e9-JEz"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="欢迎回来" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SrV-JY-yru">
+                                <rect key="frame" x="250" y="447" width="100" height="21"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="3FS-Nq-cVP"/>
+                                    <constraint firstAttribute="height" constant="21" id="p8X-w6-5Fb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Qil-Dr-VRJ" firstAttribute="top" secondItem="twN-Jg-dw4" secondAttribute="topMargin" id="2dW-ei-23N"/>
+                            <constraint firstItem="Qil-Dr-VRJ" firstAttribute="leading" secondItem="twN-Jg-dw4" secondAttribute="leadingMargin" id="78B-2m-DX5"/>
+                            <constraint firstItem="SrV-JY-yru" firstAttribute="centerY" secondItem="twN-Jg-dw4" secondAttribute="centerY" id="9iR-Dp-wK3"/>
+                            <constraint firstItem="Qil-Dr-VRJ" firstAttribute="leading" secondItem="twN-Jg-dw4" secondAttribute="leading" id="P8n-oP-QKl"/>
+                            <constraint firstItem="ysU-gp-LcS" firstAttribute="centerX" secondItem="twN-Jg-dw4" secondAttribute="centerX" id="QSf-TZ-dwX"/>
+                            <constraint firstItem="Cmz-49-ChR" firstAttribute="top" secondItem="ysU-gp-LcS" secondAttribute="bottom" constant="168" id="cJb-AU-lll"/>
+                            <constraint firstItem="ysU-gp-LcS" firstAttribute="centerY" secondItem="twN-Jg-dw4" secondAttribute="centerY" id="dga-Dl-AE2"/>
+                            <constraint firstItem="SrV-JY-yru" firstAttribute="top" secondItem="ysU-gp-LcS" secondAttribute="bottom" constant="15" id="hsE-eO-Ffo"/>
+                            <constraint firstItem="Cmz-49-ChR" firstAttribute="top" secondItem="Qil-Dr-VRJ" secondAttribute="bottom" id="m7F-t6-xNc"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Qil-Dr-VRJ" secondAttribute="trailing" id="mvY-bK-Bmr"/>
+                            <constraint firstItem="ysU-gp-LcS" firstAttribute="centerY" secondItem="twN-Jg-dw4" secondAttribute="centerY" id="ndc-bA-jMc"/>
+                            <constraint firstItem="SrV-JY-yru" firstAttribute="centerX" secondItem="twN-Jg-dw4" secondAttribute="centerX" id="q0R-dd-HOb"/>
+                            <constraint firstAttribute="trailing" secondItem="Qil-Dr-VRJ" secondAttribute="trailing" id="uSN-j2-Dln"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="78B-2m-DX5"/>
+                                <exclude reference="mvY-bK-Bmr"/>
+                                <exclude reference="dga-Dl-AE2"/>
+                                <exclude reference="ndc-bA-jMc"/>
+                                <exclude reference="9iR-Dp-wK3"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="iconBottomMargin" destination="cJb-AU-lll" id="zGB-Av-Lqb"/>
+                        <outlet property="iconImageView" destination="ysU-gp-LcS" id="tlV-aS-ZIr"/>
+                        <outlet property="titleLabel" destination="SrV-JY-yru" id="aj9-oQ-D2M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y7w-sJ-TaK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1000" y="-546"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ad_background" width="320" height="480"/>
+        <image name="avatar_default_big" width="85" height="85"/>
+    </resources>
+</document>

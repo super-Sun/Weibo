@@ -1,17 +1,6 @@
-# Uncomment this line to define a global platform for your project
-# platform :ios, '8.0'
-# Uncomment this line if you're using Swift
-# use_frameworks!
-
-target 'Weibo(高仿)' do
-
-end
-
-target 'Weibo(高仿)Tests' do
-
-end
-
-target 'Weibo(高仿)UITests' do
-
-end
+platform :ios, '8.0'
+use_frameworks!
+pod 'AFNetworking'
+pod 'SVProgressHUD'
+pod 'SDWebImage'
 

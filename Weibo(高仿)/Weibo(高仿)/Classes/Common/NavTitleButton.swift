@@ -17,10 +17,14 @@ class NavTitleButton: UIButton {
         btnSelected = !btnSelected
         selected = btnSelected
     }
+    override func setTitle(title: String?, forState state: UIControlState) {
+        //
+        super.setTitle((title ?? "") + "  ", forState: state)
+    }
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        setTitle("首页" + "  ", forState: UIControlState.Normal)
+        
         setTitleColor(UIColor.blackColor(), forState: UIControlState.Normal)
         setImage(UIImage(named: "navigationbar_arrow_down"), forState: UIControlState.Normal)
         setImage(UIImage(named: "navigationbar_arrow_up"), forState: UIControlState.Selected)
